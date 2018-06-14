@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  padding: 11.5px 10px;
+  padding: 8px 5px;
   font-size: 14px;
   line-height: 1;
   font-weight: normal;
@@ -117,10 +117,10 @@ h1, h2, h3, h4, h5, h6 {
   color: $text_color;
   font-size: 14px;
   line-height: inherit;
-  border: 1px solid $accent;
+  border: 2px solid #fff;
   background-color: transparent;
   font-family: $default_family, sans-serif;
-  padding: 11px 20px 11px 35px;   
+  padding: 8px 10px 8px 10px;   
 
   &.error {
     border-color: red;
@@ -140,17 +140,17 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	&::-webkit-input-placeholder {
-    color: #000;
+    color: #fff;
 		opacity: 1;
 	}
 	
 	&::-moz-placeholder {
-    color: #000;
+    color: #fff;
 		opacity: 1;
 	}
 	
 	&:-ms-input-placeholder {
-    color: #000;
+    color: #fff;
 		opacity: 1;
 	}
 	
@@ -171,21 +171,39 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+  background-color: $black;
+
+  &--main {
+    max-width: 360px;
+
+    .input-div, .button {
+      max-width: 200px;
+    }
+
+    .button {
+      white-space: normal;
+    }
+  }
   
   &-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    &--main {
+      display: block;
+    }
   }
 
+
   &-title {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
   }
 
   .input-div {
     margin-right: 20px;
-    flex-basis: 180px;
+    // flex-basis: 180px;
   }
 
   .input-div, .button {
