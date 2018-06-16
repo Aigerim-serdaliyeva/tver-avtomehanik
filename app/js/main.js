@@ -161,6 +161,30 @@ $(document).ready(function () {
   });
 
 
+  $(".carousel-reviews").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+    },
+  });
+
+
+  $(".carousel-marka").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      760: { items: 4, mouseDrag: true, dots: false, nav: true },
+      991: { items: 6, mouseDrag: true, dots: false, nav: true },
+    },
+  });
+
   $(".carousel-certificates").owlCarousel({
     loop: true,
     smartSpeed: 500,

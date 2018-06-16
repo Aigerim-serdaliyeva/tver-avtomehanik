@@ -96,81 +96,349 @@
       </nav>
     </header>
 
-  <section class="section section-main inverse" id="main">
-    <div class="container">
-      <div class="section-main-content">
-        <div class="main">
-          <h3 class="section-main-title-1">
-            Позаботимся о Вашем автомобиле как о своем собственном
-          </h3>
-          <h2 class="section-main-title">
-            У нас дешевле на 10% 
-            и качественнее в 2 раза
-          </h2>
-          <div class="section-main-title-2">
-              Не верите? Убедитесь сами!
-          </div>
+<section class="section section-main inverse" id="main">
+  <div class="container">
+    <div class="section-main-content">
+      <div class="main">
+        <h3 class="section-main-title-1">
+          Позаботимся о Вашем автомобиле как о своем собственном
+        </h3>
+        <h2 class="section-main-title">
+          У нас дешевле на 10% 
+          и качественнее в 2 раза
+        </h2>
+        <div class="section-main-title-2">
+            Не верите? Убедитесь сами!
+        </div>
+      </div>
+      
+      <div class="form form--vertical wow slideInLeft">
+        <form action="/mail.php" method="post">
+          <div class="form-skidka">Постоянным клиентам скидка</div>
+            <div class="form-title">Отремонтируйте автомобиль в автосервисе 
+                "ТверьАвтомеханик" и получите скидку в 10% 
+                на последующие услуги!</div>
+            <div class="form-content">
+                <input type="hidden" name="info" value="Отремонтируйте автомобиль в автосервисе ТверьАвтомеханик и получите скидку в 10% на последующие услуги!">
+                <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Введите имя">
+                </div>
+                <!-- <div class="input-div">
+                    <input type="email" class="input" name="email" placeholder="E-mail *"
+                    required=""> <span class="error-message">Заполните это поле</span>
+
+                </div> -->
+                <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *"
+                    required=""> <span class="error-message">Заполните это поле</span>
+
+                </div>
+                <button class="button ajax-submit" type="submit" id="otremontirovat_avtomobil_i_polu4it_postoyannuu_skidku">Отремонтировать автомобиль 
+                    и получить постоянную скидку </button>
+            </div>
+            <div class="form-info-block">
+              <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
+              данных и соглашаюсь с условиями политики конфиденциальности">
+              <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
+
+              <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
+              данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
+            </div>
+            
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-comand">
+  <div class="container">
+    <div class="section-title">Наша команда автомехаников</div>
+    <div class="section-comand-content">
+      <div class="comand">
+        <div class="comand-title">Имя <br>
+          Стаж работы</div>
+      </div>
+      <div class="comand">
+        <div class="comand-title">Имя  <br>
+          Стаж работы</div>
+      </div>
+      <div class="comand">
+        <div class="comand-title">Имя <br>
+          Стаж работы</div>
+      </div>
+      <div class="comand">
+        <div class="comand-title">Имя <br>
+          Стаж работы</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-services">
+  <div class="container">
+    <div class="section-title">Все виды услуг для заботы о Вашем автомобиле</div>
+    <div class="section-services-content">
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-1.png" alt="">
+        </div>
+        <h3 class="service-title">Сход развал 3D  </h3>
+        <button class="button">Записаться онлайн</button>
+      </div>
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-2.png" alt="">
+        </div>
+        <h3 class="service-title">Компьютерная <br>
+            диагностика </h3>
+        <button class="button">Записаться онлайн</button>
+      </div>
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-3.png" alt="">
+        </div>
+        <h3 class="service-title">Кузовной ремонт <br>
+            и покраска автомобилей  </h3>
+        <button class="button">Записаться онлайн</button>
+      </div>
+    </div>
+
+    <div class="section-services-content">
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-4.png" alt="">
+        </div>
+        <h3 class="service-title">Ремонт подвески <br>
+            и ходовой </h3>
+        <button class="button">Записаться онлайн</button>
+      </div>
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-5.png" alt="">
+        </div>
+        <h3 class="service-title">Сварочные работы</h3>
+        <button class="button">Записаться онлайн</button>
+      </div>
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-6.png" alt="">
+        </div>
+        <h3 class="service-title">Шиномонтаж</h3>
+        <button class="button">Записаться онлайн</button>
+      </div>
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-7.png" alt="">
+        </div>
+        <h3 class="service-title">Ремонт двигателей</h3>
+        <button class="button">Записаться онлайн</button>
+      </div>      
+    </div>
+
+    <div class="section-services-content">      
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-8.png" alt="">
+        </div>
+        <h3 class="service-title">Замена штатных <br>
+            катализаторов на пламягасители  </h3>
+        <button class="button">Записаться онлайн</button>
+      </div>
+      <div class="service">
+        <div class="service-img">
+          <img src="./img/service-9.png" alt="">
+        </div>
+        <h3 class="service-title">Полное ТО автомобиля</h3>
+        <button class="button">Записаться онлайн</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-reviews">
+  <div class="container">
+    <div class="section-title section-title--white">Отзывы благодарных клиентов</div>
+
+    <div class="owl-carousel carousel-reviews">
+      <div class="review">
+        <div class="review-img">
+          <!-- <img src="./img/review-2.png" alt=""> -->
+        </div>
+        <div class="review-block">
+          <div class="review-author">Дмитрий</div>
+          <div class="review-summary"> "...работаю с данным автосервисом год и менять не собираюсь"</div>
+          <div class="review-text">Я работаю с данным автосервисом второй год, практически с его открытия, и менять не собираюсь. Слесаря квалифицированны, делают качественно и в срок. Очень правильно и четко поставлена работа персонала, и это полностью заслуга директора. Можно в любое время дня и ночи  позвонить Владимиру и вашу машину примут на ремонт.  А это немало важно в работе автоперевозок.  Цены в данном автосервисе  демократичные. Спасибо ребята, так держать!!!! Советую всем!!!!</div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review-img">
+          <img src="./img/review-2.png" alt="">
+        </div>
+        <div class="review-block">
+          <div class="review-author">Татьяна</div>
+          <div class="review-summary">"...быстро, качественно, по нормальным ценам"</div>
+          <div class="review-text">Долго искали хорошее Сто для обслуживания своих машин. Повезло нарваться на ТверьАвтомеханик . Ребята работают быстро, качественно, по нормальным ценам. Всегда помогают заказать запчасти. Делают практически все. Мы с мужем ездим к ним на плановое ТO и просто убрать мелкие поломки.</div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review-img">
+          <img src="./img/review-3.png" alt="">
+        </div>
+        <div class="review-block">
+          <div class="review-author">Михаил</div>
+          <div class="review-summary">"ребята сделали неплохую скидку и сделали всю работу очень качественно"</div>
+          <div class="review-text">Стукнули машину, обратились в СТО. Думали-мелочевка, а оказалось, внутрення поломка серьезная. Ремонт затянулся, но ребята сделали неплохую скидку и сделали всю работу очень качественно. Кузов как новый! Спасбо большое!</div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review-img">
+        </div>
+        <div class="review-block">
+          <div class="review-author">Павел</div>
+          <div class="review-summary">"Первый раз заехали случайно, а теперь обслуживаем свои машины вместе с женой только там"</div>
+          <div class="review-text">Пользуемся услугами ТверьАвтомеханик уже 2 года, до этого обращались в другое сто. Оказалось, там сильно накидывают на стоимость запчастей и ремонта, а здесь все доступно. Первый раз заехали случайно, а теперь обслуживаем свои машины вместе с женой только там. Сдружились с мастером Владимиром. Даже консультируемся у него в кризисных ситуациях. 
+              Рекомендую всем)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section-garant">
+  <div class="container">
+    <div class="section-title">Наши гарантии</div>
+    <div class="section-garant-content">
+      <div class="garant">
+        <div class="garant-img">
+          <img src="./img/garant-1.png" alt="">
+          <div class="garant-title">Короткие <br>
+              сроки</div>
         </div>
         
-        <div class="form form--main wow slideInLeft">
-          <form action="/mail.php" method="post">
-              <div class="form-title">Отремонтируйте автомобиль в автосервисе 
-                  "ТверьАвтомеханик" и получите скидку в 10% 
-                  на последующие услуги!</div>
-              <div class="form-content form-content--main">
-                  <input type="hidden" name="info" value="Отремонтируйте автомобиль в автосервисе ТверьАвтомеханик и получите скидку в 10% на последующие услуги!">
-                  <div class="input-div">
-                      <input type="text" class="input" name="name" placeholder="Введите имя">
-                  </div>
-                  <!-- <div class="input-div">
-                      <input type="email" class="input" name="email" placeholder="E-mail *"
-                      required=""> <span class="error-message">Заполните это поле</span>
+        <h4 class="garant-remont">
+            Гарантируем максимально высокую скорость ремонта, которая будет оговариваться с Вами заранее.
+        </h4>
+        <div class="garant-vremya">
+            Мы будем уменьшать стоимость ремонта на 1% за каждый день просрочки.
+        </div>
+      </div>
 
-                  </div> -->
-                  <div class="input-div">
-                      <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *"
-                      required=""> <span class="error-message">Заполните это поле</span>
+      <div class="garant">
+        <div class="garant-img">
+          <img src="./img/garant-2.png" alt="">
+          <div class="garant-title">Гарантия <br>
+              качества</div>
+        </div>
+        <h4 class="garant-remont">
+            В процессе ремонта используем только оригинальные запчасти и современное оборудование. 
+        </h4>
+        <div class="garant-vremya">
+            Мы уверены в качестве своих услуг и готовы дать гарантию на результат ремонта до 6 месяцев.
+        </div>
+      </div>
 
-                  </div>
-                  <button class="button ajax-submit" type="submit" id="otremontirovat_avtomobil_i_polu4it_postoyannuu_skidku">Отремонтировать автомобиль 
-                      и получить постоянную скидку </button>
-              </div>
+      <div class="garant">
+        <div class="garant-img">
+          <img src="./img/garant-3.png" alt="">
+          <div class="garant-title">Доступные <br>
+              цены</div>
+        </div>
+        <h4 class="garant-remont">
+            Цены на СТО "ТверьАвтомеханик" в полной мере соответствуют качеству предоставляемых услуг.
+        </h4>
+        <div class="garant-vremya">
+            Найдете где-то дешевле? Мы готовы к обсуждению стоимости.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-marka">
+  <div class="container">
+    <div class="section-title">Ремонтируем автомобили всех востребованных марок</div>
+
+    <div class="owl-carousel carousel-marka">
+      <img src="./img/lada.png" alt="">
+      <img src="./img/toyota.png" alt="">
+      <img src="./img/nissan.png" alt="">
+      <img src="./img/huyndai.png" alt="">
+      <img src="./img/kia.png" alt="">
+      <img src="./img/renault.png" alt="">
+      <img src="./img/renault.png" alt="">
+      <img src="./img/renault.png" alt="">
+    </div>
+
+    <div class="form wow slideInLeft">
+      <form action="/mail.php" method="post">
+          <div class="form-title">Закажите обратный звонок и узнайте стоимость ремонта Вашего автомобиля</div>
+          <div class="form-block">
+            <div class="form-content">
+                <input type="hidden" name="info" value="Закажите обратный звонок и узнайте стоимость ремонта Вашего автомобиля">
+                <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Введите имя">
+                </div>
+                <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *"
+                    required=""> <span class="error-message">Заполните это поле</span>
+  
+                </div>
+                <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+            </div>
+            <div class="form-info-block">
+              <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
+              данных и соглашаюсь с условиями политики конфиденциальности">
+              <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
+  
               <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-                  данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
-          </form>
+              данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
+            </div>
+          </div>
+          
+          
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <footer class="footer inverse">
+      <div class="container">
+        <div class="footer-content">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+          </a>
+
+          <div class="footer-address"></div>
+          <div class="footer-phone">Телефоны:
+            <br>
+            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317 - 01 - 64</a>
+
+            <br>
+            <a href="tel:+" class="text-phone" id="phone_number">+ 7 778 997 - 26 - 30</a>
+
+          </div>
+          <div class="footer-comand">Созддано командой
+            <br>
+            <img src="./img/marketing-time.png" alt="">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <footer class="footer inverse">
-    <div class="container">
-      <div class="footer-content">
-        <a href="/" class="logo">
-          <img src="./img/logo.png" alt="">
-        </a>
-
-        <div class="footer-address"></div>
-        <div class="footer-phone">Телефоны:
-          <br>
-          <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317 - 01 - 64</a>
-
-          <br>
-          <a href="tel:+" class="text-phone" id="phone_number">+ 7 778 997 - 26 - 30</a>
-
-        </div>
-        <div class="footer-comand">Созддано командой
-          <br>
-          <img src="./img/marketing-time.png" alt="">
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
   </div>
 
   <div class="remodal remodal-small modal" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
   <button data-remodal-action="close" class="remodal-close"></button>
-  <div class="modal-title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+  <div class="modal-title">Оставьте заявку,
+    <br>и наш консультант Вам перезвонит</div>
   <form action="/mail.php" method="post">
     <input type="hidden" name="info" value="Обратный звонок">
     <div class="input-div">
