@@ -90,11 +90,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   background-color:$accent;
   color: #000 !important;
-  // white-space: nowrap;
   border: 2px solid $accent;
   cursor: pointer;
 
   &:hover {
+    // background-color: #fff;
     background-color: transparent;
     border: 2px solid $accent;
     color: #fff !important;
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #fff;
   background-color: transparent;
   font-family: $default_family, sans-serif;
-  padding: 6px 10px 6px 10px;   
+  padding: 7px 10px 7px 10px;   
 
   &.error {
     border-color: red;
@@ -168,13 +168,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form {
-  position: relative;
-  
+  position: relative;  
 
   &-block {
     max-width: 940px;
     background-color: $black;
     margin: 0 auto;
+
+    .form-content {
+      padding: 20px 0 0;
+    }
+
+    .form-info-block {
+      max-width: 670px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+    }
   }
 
   &--vertical {
@@ -228,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
     max-width: 670px;
     margin: 0 auto;
-    padding: 20px 20px 0;
+    padding: 0 20px 0;
 
   }
 
@@ -236,6 +245,7 @@ h1, h2, h3, h4, h5, h6 {
   &-title {
     font-size: 16px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .input-div {
@@ -254,6 +264,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 10px;
     text-align: left;
     padding-left: 25px;
+    color: #fff;
     span {
       color: $accent;
     }
@@ -318,4 +329,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 
-
+.hexagon {
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0);
+  -ms-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0);
+  -moz-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0);
+  -o-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0);
+}

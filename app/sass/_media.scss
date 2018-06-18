@@ -7,6 +7,23 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
 
+  .header {
+    .logo {
+      margin-right: 20px;
+    }
+  }
+
+  .section {
+
+    .line {
+      display: none;
+    }
+    &-team {
+      .line {
+        display: none;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 991px) {	
@@ -17,6 +34,21 @@
 
   .header {
     padding: 5px 0;
+
+    .logo {
+      margin-right: 0;
+    }
+    &-title {
+      display: none;
+    }
+
+    &-grafik {
+      display: none;
+    }
+
+    &-phone {
+      display: none;
+    }
   }
 
   .footer {
@@ -33,9 +65,10 @@
 
 	.main-menu {
     display: none;
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: $black;
     position: fixed;
-    top: 89px;
+    top: 84px;
     left: 0;
     right: 0;
     text-align: left;
@@ -59,8 +92,53 @@
 		}
   }
     
+  .form {
+    margin: 0 auto;
+    &--vertical {
+      max-width: 500px;
+    }
+
+    .input-div, .button {
+      width: 100%;
+    }
+  }
 
   .section {
+
+    &-main {
+      padding-top: 120px;
+
+      &-content {
+        flex-direction: column;
+      }
+
+      &-title {
+        &-1 {
+          margin-bottom: 30px;
+        }
+        &-2 {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &-team {
+      .member {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-services {
+      &-content {
+        display: none;
+      }
+      .carousel-service {
+        display: block;
+      }
+      .service {
+        // margin-right: 0 !important;
+      }
+    }
     
   }
 
@@ -88,7 +166,6 @@
       }
     }
   }
-
 
 }
 
@@ -127,11 +204,39 @@
   .section {
     &-title {
       font-size: 24px;
+      margin-bottom: 20px;
     }
 
     &-main {
+      &-title {
+        font-size: 36px;
+        max-width: none;
+      }
+    }  
       
-    }    
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px) {
+  .section {
+
+    &-title {
+      padding-left: 0;
+      text-align: center;
+      &::before {
+        display: none;
+      }
+    }
+
+    &-team {
+      &-content {
+        justify-content: center;
+      }
+      .member {
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 
@@ -174,6 +279,12 @@
 		display: none !important;
   }
 
+  .form {
+    &-content {
+      padding: 0;
+    }
+  }
+
   .header {
     .button {
       display: none;
@@ -182,6 +293,21 @@
 
   .section {
 
+    &-main {
+      padding-top: 90px;
+
+      &-title {
+        font-size: 26px;
+        margin-bottom: 18px;
+        &-1 {
+          margin-bottom: 15px;
+          font-size: 20px;
+        }
+        &-2 {
+          font-size: 20px;
+        }
+      }
+    }
   }
 
   .modal {

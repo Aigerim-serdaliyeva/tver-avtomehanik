@@ -171,6 +171,29 @@ $(document).ready(function () {
     },
   });
 
+  $(".carousel-sovet").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      480: { items: 2, mouseDrag: false, dots: true, nav: false },
+    },
+  });
+
+
+  $(".carousel-service").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      991: { items: 3, mouseDrag: true, dots: false, nav: true },
+    },
+  });
 
   $(".carousel-marka").owlCarousel({
     loop: true,
