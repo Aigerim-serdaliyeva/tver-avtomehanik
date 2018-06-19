@@ -492,10 +492,13 @@ body {
   }
 
   &-contact {
-    .contact {
+    &-content {
       display: flex;
       justify-content: space-between;
 
+      
+    }
+    .contact {
       &-phone {
         margin: 40px 0 80px;
         font-size: 16px;
@@ -529,7 +532,7 @@ body {
         }
       }
     }
-    .map, .contact-text {
+    .map, .contact {
       width: 48%;
       text-align: left;
     }
@@ -651,6 +654,7 @@ body {
     }
 
     ul {
+      padding: 0;
       li {
         font-size: 12px;
         list-style: none;

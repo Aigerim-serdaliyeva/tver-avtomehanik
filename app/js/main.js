@@ -171,17 +171,7 @@ $(document).ready(function () {
     },
   });
 
-  $(".carousel-sovet").owlCarousel({
-    loop: true,
-    smartSpeed: 500,
-    margin: 30,
-    navText: ['', ''],
-    responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: false, dots: true, nav: false },
-    },
-  });
-
+  
 
   $(".carousel-service").owlCarousel({
     loop: true,
@@ -202,22 +192,24 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      480: { items: 3, mouseDrag: true, dots: false, nav: true },
       760: { items: 4, mouseDrag: true, dots: false, nav: true },
       991: { items: 6, mouseDrag: true, dots: false, nav: true },
     },
   });
 
-  $(".carousel-certificates").owlCarousel({
+  $(".carousel-sovet").owlCarousel({
     loop: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      767: { items: 2, mouseDrag: false, dots: true, nav: false },
     },
   });
+
+
 
 
 });
