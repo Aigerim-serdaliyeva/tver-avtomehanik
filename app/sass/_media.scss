@@ -134,10 +134,11 @@
       }
       .carousel-service {
         display: block;
+        .service {
+          margin: 0 auto;
+        }
       }
-      .service {
-        // margin-right: 0 !important;
-      }
+      
     }
 
     &-reviews {

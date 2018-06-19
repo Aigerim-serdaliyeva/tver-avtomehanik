@@ -187,14 +187,16 @@ $(document).ready(function () {
 
   $(".carousel-marka").owlCarousel({
     loop: true,
+    dots: true,
+    nav: false,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 3, mouseDrag: true, dots: false, nav: true },
-      760: { items: 4, mouseDrag: true, dots: false, nav: true },
-      991: { items: 6, mouseDrag: true, dots: false, nav: true },
+      0: { items: 1, mouseDrag: false },
+      480: { items: 3, mouseDrag: true },
+      760: { items: 4 },
+      991: { items: 6 },
     },
   });
 

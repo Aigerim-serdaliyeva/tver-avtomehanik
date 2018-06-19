@@ -448,9 +448,28 @@ body {
     .carousel-marka {
       margin-bottom: 50px;
     }
+
+    .owl-carousel {
+      .owl {
+        &-dot {
+          background: #252525 !important;
+          &.active {
+            background: #546945 !important;
+          }
+        }
+      }
+      
+    }
   }
 
   &-sovet {
+    &-content {
+      position: relative;
+      
+      .line {
+        top: 120px;
+      }
+    }
     .carousel-sovet {
       position: relative;
       .sovet {
@@ -551,25 +570,27 @@ body {
   
     &-content {
       display: flex;
-      justify-content: space-between;   
-      margin-left: 90px;      
+      flex-direction: column;
+      text-align: left;  
     }
     
     &-title {
       font-size: 48px;
       font-weight: 900;
       margin-bottom: 25px;
+      color: $accent;
     }
 
     &-text {
       font-size: 24px;
       margin: 0 0 60px;
+      color: #fff;
     }
   
     &-link {
       text-decoration: underline;
       display: inline-block;
-      margin-bottom: 150px;
+      color: #fff;
     }
   }
 }
