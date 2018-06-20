@@ -346,7 +346,7 @@
         <div class="review">
           <div class="member hexagon">
             <div class="member-image hexagon">
-              <img src="./img/review-2.png" alt="">
+              <img src="./img/review-1.jpg" alt="">
             </div>
           </div>
           
@@ -360,20 +360,7 @@
         <div class="review">
           <div class="member hexagon">
             <div class="member-image hexagon">
-              <img src="./img/review-2.png" alt="">
-            </div>
-          </div>
-          <div class="review-block">
-            <div class="review-author">Татьяна</div>
-            <div class="review-summary">"...быстро, качественно, по нормальным ценам"</div>
-            <div class="review-text">Долго искали хорошее Сто для обслуживания своих машин. Повезло нарваться на ТверьАвтомеханик . Ребята работают быстро, качественно, по нормальным ценам. Всегда помогают заказать запчасти. Делают практически все. Мы с мужем ездим к ним на плановое ТO и просто убрать мелкие поломки.</div>
-          </div>
-        </div>
-
-        <div class="review">
-          <div class="member hexagon">
-            <div class="member-image hexagon">
-              <img src="./img/review-3.png" alt="">
+              <img src="./img/review-2.jpg" alt="">
             </div>
           </div>
           <div class="review-block">
@@ -386,7 +373,7 @@
         <div class="review">
           <div class="member hexagon">
             <div class="member-image hexagon">
-              <img src="./img/review-4.png" alt="">
+              <img src="./img/review-3.jpg" alt="">
             </div>
           </div>
           <div class="review-block">
@@ -396,6 +383,33 @@
                 Рекомендую всем)</div>
           </div>
         </div>
+
+        <div class="review">
+          <div class="member hexagon">
+            <div class="member-image hexagon">
+              <img src="./img/review-4.jpg" alt="">
+            </div>
+          </div>
+          <div class="review-block">
+            <div class="review-author">Татьяна</div>
+            <div class="review-summary">"...быстро, качественно, по нормальным ценам"</div>
+            <div class="review-text">Долго искали хорошее Сто для обслуживания своих машин. Повезло нарваться на ТверьАвтомеханик . Ребята работают быстро, качественно, по нормальным ценам. Всегда помогают заказать запчасти. Делают практически все. Мы с мужем ездим к ним на плановое ТO и просто убрать мелкие поломки.</div>
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="member hexagon">
+            <div class="member-image hexagon">
+              <img src="./img/noavatar.png" alt="">
+            </div>
+          </div>
+          <div class="review-block">
+            <div class="review-author">Нет фото</div>
+            <div class="review-summary">"...быстро, качественно, по нормальным ценам"</div>
+            <div class="review-text">Долго искали хорошее Сто для обслуживания своих машин. Повезло нарваться на ТверьАвтомеханик . Ребята работают быстро, качественно, по нормальным ценам. Всегда помогают заказать запчасти. Делают практически все. Мы с мужем ездим к ним на плановое ТO и просто убрать мелкие поломки.</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -601,101 +615,98 @@
   </footer>
 </div>
 
-<div class="remodal remodal-small modal" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
-  <button data-remodal-action="close" class="remodal-close"></button>
-  <div class="modal-title">Оставьте заявку, <br>
-      и мы перезвоним Вам</div>
-  <form action="/mail.php" method="post">
-    <input type="hidden" name="info" value="Обратный звонок">
-    <div class="input-div">
-      <input type="text" class="input" name="name" placeholder="Введите имя">
+  <div class="remodal remodal-small modal" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-title">Оставьте заявку, <br>
+        и мы перезвоним Вам</div>
+    <form action="/mail.php" method="post">
+      <input type="hidden" name="info" value="Обратный звонок">
+      <div class="input-div">
+        <input type="text" class="input" name="name" placeholder="Введите имя">
+      </div>
+      <div class="input-div">
+        <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+        <span class="error-message">Заполните это поле</span>
+      </div>
+      <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
+    </form>
+
+    <div class="form-info-block">
+      <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
+      данных и соглашаюсь с условиями политики конфиденциальности">
+      <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
+
+      <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
+      данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
     </div>
-    <div class="input-div">
-      <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
-      <span class="error-message">Заполните это поле</span>
-    </div>
-    <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
-  </form>
-
-  <div class="form-info-block">
-    <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
-    данных и соглашаюсь с условиями политики конфиденциальности">
-    <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
-
-    <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-    данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
-  </div>
-
-  
-</div>
-
-
-<div class="remodal remodal-small modal" data-remodal-id="zapisatsya-online" data-remodal-options="hashTracking: true">
-  <button data-remodal-action="close" class="remodal-close"></button>
-  <div class="modal-title">Оставьте заявку, <br>
-      и мы Вам перезвоним для уточнения деталей</div>
-  <form action="/mail.php" method="post">
-    <input type="hidden" name="info" value="Оставьте заявку, и мы Вам перезвоним для уточнения деталей">
-    <div class="input-div">
-      <input type="text" class="input" name="name" placeholder="Введите имя">
-    </div>
-    <div class="input-div">
-      <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
-      <span class="error-message">Заполните это поле</span>
-    </div>
-    <button class="button ajax-submit" type="submit" id="zapisatsya_online">Записаться онлайн</button>
 
     
-  </form>
-
-  <div class="form-info-block">
-    <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
-    данных и соглашаюсь с условиями политики конфиденциальности">
-    <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
-
-    <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-    данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
   </div>
 
-  
-</div>
+  <div class="remodal remodal-small modal" data-remodal-id="zapisatsya-online" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-title">Оставьте заявку, <br>
+        и мы Вам перезвоним для уточнения деталей</div>
+    <form action="/mail.php" method="post">
+      <input type="hidden" name="info" value="Оставьте заявку, и мы Вам перезвоним для уточнения деталей">
+      <div class="input-div">
+        <input type="text" class="input" name="name" placeholder="Введите имя">
+      </div>
+      <div class="input-div">
+        <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+        <span class="error-message">Заполните это поле</span>
+      </div>
+      <button class="button ajax-submit" type="submit" id="zapisatsya_online">Записаться онлайн</button>
 
+      
+    </form>
 
-<div class="remodal remodal-small modal" data-remodal-id="zapisatsya-online-kupon" data-remodal-options="hashTracking: true">
-  <button data-remodal-action="close" class="remodal-close"></button>
-  <div class="modal-title">Воспользуйтесь нашими услугами на сумму от 3000 р. 
-      и получите купон стоимостью 1000 р. 
-      на бесплатную компьютерную диагностику 
-      или диагностику аккумулятора и генератора!</div>
-  <form action="/mail.php" method="post">
-    <input type="hidden" name="info" value="Воспользуйтесь нашими услугами на сумму от 3000 р. и получите купон стоимостью 1000 р. на бесплатную компьютерную диагностику 
-    или диагностику аккумулятора и генератора!">
-    <div class="input-div">
-      <input type="text" class="input" name="name" placeholder="Введите имя">
+    <div class="form-info-block">
+      <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
+      данных и соглашаюсь с условиями политики конфиденциальности">
+      <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
+
+      <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
+      данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
     </div>
-    <div class="input-div">
-      <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
-      <span class="error-message">Заполните это поле</span>
-    </div>
-    <button class="button ajax-submit" type="submit" id="zapisatsya_online_i_polu4it_kupon">Записаться онлайн  и получить купон</button>
 
     
-  </form>
-
-  <div class="form-info-block">
-    <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
-    данных и соглашаюсь с условиями политики конфиденциальности">
-    <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
-
-    <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-    данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
   </div>
 
-  
-</div>
+  <div class="remodal remodal-small modal" data-remodal-id="zapisatsya-online-kupon" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="modal-title">Воспользуйтесь нашими услугами на сумму от 3000 р. 
+        и получите купон стоимостью 1000 р. 
+        на бесплатную компьютерную диагностику 
+        или диагностику аккумулятора и генератора!</div>
+    <form action="/mail.php" method="post">
+      <input type="hidden" name="info" value="Воспользуйтесь нашими услугами на сумму от 3000 р. и получите купон стоимостью 1000 р. на бесплатную компьютерную диагностику 
+      или диагностику аккумулятора и генератора!">
+      <div class="input-div">
+        <input type="text" class="input" name="name" placeholder="Введите имя">
+      </div>
+      <div class="input-div">
+        <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
+        <span class="error-message">Заполните это поле</span>
+      </div>
+      <button class="button ajax-submit" type="submit" id="zapisatsya_online_i_polu4it_kupon">Записаться онлайн  и получить купон</button>
 
+      
+    </form>
 
-<div class="remodal more" data-remodal-id="more-modal-1" data-remodal-options="hashTracking: true">
+    <div class="form-info-block">
+      <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
+      данных и соглашаюсь с условиями политики конфиденциальности">
+      <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
+
+      <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
+      данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
+    </div>
+
+    
+  </div>
+
+  <div class="remodal more" data-remodal-id="more-modal-1" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>   
     
     <div class="sovet">
@@ -714,65 +725,61 @@
         <li><span>7.</span> Не используйте изощренные присадки и устройства для автомобиля сомнительного происхождения. В лучшем случае они просто не помогут, в худшем - приведут к значительной поломке.</li>
         <li><span>8.</span> Не грузите автомобиль сверх нормы, предусмотренной в инструкции по эксплуатации. Лишние кило могут привести к поломке кузова, подвески и трансмиссии.</li>
       </ul>
+    </div>    
+  </div>
+
+  <div class="remodal more" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>   
+    
+    <div class="sovet">
+      <div class="sovet-title">Инструкция по самостоятельной замене колеса</div>
+
+      <img src="./img/instruction-pop.png" alt="">
+
+      <ul>
+        <li><span>Шаг 1.</span> Под колеса, которые не будете менять, установите страховочные клинья. Если их нет, можно обойтись кусками кирпича или поленьями. Установить их нужно плотно, при необходимости можно воспользоваться молотком. </li>
+        <li><span>Шаг 2.</span> Прежде чем поставить автомобиль на домкрат, ослабьте (но не откручивайте совсем) гайки колеса, которое планируете заменить. Так Вам потребуется меньше усилий, чтобы заменить колесо.</li>
+        <li><span>Шаг 3.</span> Положите запаску возле колеса, которое необходимо заменить, чтобы она была под рукой. Не облокачивайте ее на автомобиль. Она может его поцарапать или попросту укатиться.</li>
+        <li><span>Шаг 4.</span> Поднимите автомобиль при помощи домкрата. Установить его нужно таким образом, чтобы верхняя точка упиралась в специально отведенное для этого гнездо.</li>
+        <li><span>Шаг 5.</span> Поддомкрачивайте его до тех пор, пока колесо не окажется в воздухе.</li>
+        <li><span>Шаг 6.</span> Полностью открутите ослабленные до этого гайки и снимите колесо.</li>
+        <li><span>Шаг 7.</span> Установите новое колесо и закрепите его гайками. Делать это нужно в шахматном порядке, чтобы избежать перекоса и неравномерной затяжки.</li>
+        <li><span>Шаг 8.</span> Замена колеса завершена. Положите демонтированное колесо на место, где прежде была запаска.</li>
+      </ul>
     </div>
     
- </div>
-
-
- <div class="remodal more" data-remodal-id="more-modal-2" data-remodal-options="hashTracking: true">
-  <button data-remodal-action="close" class="remodal-close"></button>   
-  
-  <div class="sovet">
-    <div class="sovet-title">Инструкция по самостоятельной замене колеса</div>
-
-    <img src="./img/instruction-pop.png" alt="">
-
-    <ul>
-      <li><span>Шаг 1.</span> Под колеса, которые не будете менять, установите страховочные клинья. Если их нет, можно обойтись кусками кирпича или поленьями. Установить их нужно плотно, при необходимости можно воспользоваться молотком. </li>
-      <li><span>Шаг 2.</span> Прежде чем поставить автомобиль на домкрат, ослабьте (но не откручивайте совсем) гайки колеса, которое планируете заменить. Так Вам потребуется меньше усилий, чтобы заменить колесо.</li>
-      <li><span>Шаг 3.</span> Положите запаску возле колеса, которое необходимо заменить, чтобы она была под рукой. Не облокачивайте ее на автомобиль. Она может его поцарапать или попросту укатиться.</li>
-      <li><span>Шаг 4.</span> Поднимите автомобиль при помощи домкрата. Установить его нужно таким образом, чтобы верхняя точка упиралась в специально отведенное для этого гнездо.</li>
-      <li><span>Шаг 5.</span> Поддомкрачивайте его до тех пор, пока колесо не окажется в воздухе.</li>
-      <li><span>Шаг 6.</span> Полностью открутите ослабленные до этого гайки и снимите колесо.</li>
-      <li><span>Шаг 7.</span> Установите новое колесо и закрепите его гайками. Делать это нужно в шахматном порядке, чтобы избежать перекоса и неравномерной затяжки.</li>
-      <li><span>Шаг 8.</span> Замена колеса завершена. Положите демонтированное колесо на место, где прежде была запаска.</li>
-    </ul>
   </div>
-  
-</div>
 
-<div class="remodal more-politika" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: true">
-  <button data-remodal-action="close" class="remodal-close"></button>   
-  
-  <div class="politika">
-    <div class="politika-title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
+  <div class="remodal more-politika" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>   
+    
+    <div class="politika">
+      <div class="politika-title">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</div>
 
-    <ul>
-      <li>Соблюдение Вашей конфиденциальности важно для нас. Поэтому мы разработали Политику Конфиденциальности, которая описывает, как мы используем и храним Вашу информацию. Пожалуйста, ознакомьтесь и сообщите нам, если у Вас возникнут какие-либо вопросы.</li>
-      <li><span> Сбор и использование персональной информации </span> <br>
-        Под персональной информацией понимаются данные, которые могут быть использованы для идентификации определенного лица либо связи с ним.
-        От Вас может быть запрошено предоставление персональной информации в любой момент, когда Вы связываетесь с нами. <br>
-        Какую персональную информацию мы собираем <br>
-        Когда Вы оставляете заявку на сайте, мы можем собирать различную информацию, включая Ваше имя, номер телефона, адрес электронной почты и т.д.</li>
-      <li><span>Как мы используем Вашу персональную информацию</span>  <br>
-        Персональная информация позволяет нам сообщать об уникальных предложениях, акциях и других мероприятиях и ближайших событиях. Время от времени мы можем использовать Вашу персональную информацию для отправки важных уведомлений и сообщений. Мы также можем использовать персональную информацию для внутренних целей: проведения аудита, анализа данных и различных исследований в целях улучшения услуг. <br>
-        Если Вы принимаете участие в розыгрыше призов или конкурсе, мы можем использовать информацию для управления такими программами.</li>
-      <li><span>Раскрытие информации третьим лицам</span> <br>
-        Мы не раскрываем полученную от Вас информацию третьим лицам.</li>
-      <li><span>Исключения</span> <br>
-        В соответствии с законом, судебным порядком, в судебном разбирательстве и/или на основании публичных запросов или запросов от государственных органов на территории РФ. Мы также можем раскрывать информацию о Вас, если мы определим, что такое раскрытие необходимо или уместно в целях безопасности, поддержания правопорядка или иных общественно важных случаях. <br>
-        В случае реорганизации, слияния или продажи мы можем передать собираемую нами персональную информацию соответствующему третьему лицу – правопреемнику.</li>
-      <li><span>Защита персональной информации</span> <br>
-        Мы предпринимаем меры предосторожности, включая административные, технические и физические для защиты Вашей персональной информации от утраты, кражи и недобросовестного использования, а также от несанкционированного доступа, раскрытия, изменения и уничтожения.</li>
-      <li><span>Соблюдение Вашей конфиденциальности на уровне компании</span> <br>
-        Чтобы убедиться, что Ваша персональная информация находится в безопасности, мы доводим нормы соблюдения конфиденциальности и безопасности до наших сотрудников и строго следим за исполнением мер соблюдения конфиденциальности. </li>
-      
-    </ul>
+      <ul>
+        <li>Соблюдение Вашей конфиденциальности важно для нас. Поэтому мы разработали Политику Конфиденциальности, которая описывает, как мы используем и храним Вашу информацию. Пожалуйста, ознакомьтесь и сообщите нам, если у Вас возникнут какие-либо вопросы.</li>
+        <li><span> Сбор и использование персональной информации </span> <br>
+          Под персональной информацией понимаются данные, которые могут быть использованы для идентификации определенного лица либо связи с ним.
+          От Вас может быть запрошено предоставление персональной информации в любой момент, когда Вы связываетесь с нами. <br>
+          Какую персональную информацию мы собираем <br>
+          Когда Вы оставляете заявку на сайте, мы можем собирать различную информацию, включая Ваше имя, номер телефона, адрес электронной почты и т.д.</li>
+        <li><span>Как мы используем Вашу персональную информацию</span>  <br>
+          Персональная информация позволяет нам сообщать об уникальных предложениях, акциях и других мероприятиях и ближайших событиях. Время от времени мы можем использовать Вашу персональную информацию для отправки важных уведомлений и сообщений. Мы также можем использовать персональную информацию для внутренних целей: проведения аудита, анализа данных и различных исследований в целях улучшения услуг. <br>
+          Если Вы принимаете участие в розыгрыше призов или конкурсе, мы можем использовать информацию для управления такими программами.</li>
+        <li><span>Раскрытие информации третьим лицам</span> <br>
+          Мы не раскрываем полученную от Вас информацию третьим лицам.</li>
+        <li><span>Исключения</span> <br>
+          В соответствии с законом, судебным порядком, в судебном разбирательстве и/или на основании публичных запросов или запросов от государственных органов на территории РФ. Мы также можем раскрывать информацию о Вас, если мы определим, что такое раскрытие необходимо или уместно в целях безопасности, поддержания правопорядка или иных общественно важных случаях. <br>
+          В случае реорганизации, слияния или продажи мы можем передать собираемую нами персональную информацию соответствующему третьему лицу – правопреемнику.</li>
+        <li><span>Защита персональной информации</span> <br>
+          Мы предпринимаем меры предосторожности, включая административные, технические и физические для защиты Вашей персональной информации от утраты, кражи и недобросовестного использования, а также от несанкционированного доступа, раскрытия, изменения и уничтожения.</li>
+        <li><span>Соблюдение Вашей конфиденциальности на уровне компании</span> <br>
+          Чтобы убедиться, что Ваша персональная информация находится в безопасности, мы доводим нормы соблюдения конфиденциальности и безопасности до наших сотрудников и строго следим за исполнением мер соблюдения конфиденциальности. </li>
+        
+      </ul>
+    </div>
+    
   </div>
-  
-</div>
-
-
 
   <script src="./js/libs.min.js"></script>
   <script src="./js/main.min.js"></script>

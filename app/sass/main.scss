@@ -107,7 +107,6 @@ body {
 
   &.scrolled {
     background-color: rgba($black, 1);      
-    // border-bottom: 1px solid $accent;
   }
 
   &-content {
@@ -363,23 +362,12 @@ body {
       &-image {
         width: 225px;
         height: 210px;      
-        // background-image: url('../img/review-2.png');
-        background-position: center center;
-        // background-size: cover;
-      }
-     
+      }     
     }
 
     .review {
       display: flex;
-      max-width: 990px;
-      &-img {
-        width: 260px;
-        height: 240px;
-        border: 15px solid $accent;
-        -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0);
-        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0);
-      }
+      max-width: 990px;      
 
       &-block {
         max-width: 800px;
