@@ -10,7 +10,6 @@ var gulp = require('gulp'),
   cache = require('gulp-cache'),
   autoprefixer = require('gulp-autoprefixer'),
   notify = require("gulp-notify"),
-  // fileinclude = require('gulp-file-include'),
   htmlmin = require('gulp-htmlmin');
 
 // Скрипты проекта
@@ -60,19 +59,9 @@ gulp.task('sass', function () {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-// gulp.task('partial', function () {
-//   gulp.src(['app/pages/*.html'])
-//     .pipe(fileinclude({
-//       prefix: '@@',
-//       basepath: '@file'
-//     }))
-//     .pipe(gulp.dest('app'));
-// });
-
 gulp.task('watch', ['sass', 'libs-js', 'main-js', 'browser-sync'], function () {
   gulp.watch('app/sass/**/*.+(sass|scss)', ['sass']);
   gulp.watch('app/js/main.js', ['main-js']);
-  // gulp.watch(['app/pages/*.html', 'app/partials/*.html'], ['partial']);
   gulp.watch(['app/*.html'], browserSync.reload);
 });
 
