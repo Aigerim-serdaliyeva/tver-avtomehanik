@@ -215,6 +215,15 @@ $(document).ready(function () {
     },
   });
 
+  var $zapisatsya = $("[data-remodal-id='zapisatsya-online']");
+  var zapisatsya = $zapisatsya.remodal();
+
+  $(".section-services-content, .carousel-service").on('click', '.service .button', function() {
+    var title = $(this).siblings(".service-title").html();
+    $zapisatsya.find("[name=info]").val("Записаться онлайн на " + title);
+    zapisatsya.open();
+  });
+
 });
 
 function validateEmail(email) {
