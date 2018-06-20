@@ -81,7 +81,6 @@ $(document).ready(function () {
       e.preventDefault();
       // отнимаем высоту шапки, для того чтобы шапка не прикрывала верхнию часть блока
       var top = $($href).offset().top - headerHeight;
-      console.log(headerHeight);
       $html.stop().animate({ scrollTop: top }, "slow", "swing");
     }
 
