@@ -5,7 +5,7 @@ $(document).ready(function () {
   var $html = $("html, body");
   var $header = $(".header");
   var $menu = $(".main-menu");
-  var headerHeight = 99;
+  var headerHeight = 120;
   var $hamburger = $(".hamburger");
 
   // забираем utm из адресной строки и пишем в sessionStorage, чтобы отправить их на сервер при form submit
@@ -23,6 +23,9 @@ $(document).ready(function () {
 
   if ($wnd.width() < 992) {
     headerHeight = 89;
+  }
+  if ($wnd.width() < 768) {
+    headerHeight = 84;
   }
 
   // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
@@ -78,6 +81,7 @@ $(document).ready(function () {
       e.preventDefault();
       // отнимаем высоту шапки, для того чтобы шапка не прикрывала верхнию часть блока
       var top = $($href).offset().top - headerHeight;
+      console.log(headerHeight);
       $html.stop().animate({ scrollTop: top }, "slow", "swing");
     }
 
