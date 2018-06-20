@@ -212,12 +212,8 @@
       margin-right: 0;
       flex-basis: auto;
     }    
-    &-info {
-      &-block {
-        max-width: 500px !important;
-        // margin: 0 auto;
-      }
-      
+    &-bottom {
+      max-width: 500px !important;      
     }
   }
 

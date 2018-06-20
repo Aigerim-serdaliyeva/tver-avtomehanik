@@ -77,15 +77,16 @@
   &-close {
     left: auto;
     right: 0;
-    color: #fff;
+    color: #fff !important;
+
     &:before {
       font-size: 35px;
     }
   }
 
   &.remodal-small {
-    max-width: 400px;
-    padding: 60px 25px;
+    max-width: 420px;
+    padding: 40px 25px;
   }
 }
 

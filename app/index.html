@@ -120,27 +120,23 @@
                   "ТверьАвтомеханик" и получите скидку в 10% 
                   на последующие услуги!</h4>
               <div class="form-content">
-                  <input type="hidden" name="info" value="Отремонтируйте автомобиль в автосервисе ТверьАвтомеханик и получите скидку в 10% на последующие услуги!">
-                  <div class="input-div">
-                      <input type="text" class="input" name="name" placeholder="Введите имя">
-                  </div>
-                  <div class="input-div">
-                      <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *"
-                      required=""> <span class="error-message">Заполните это поле</span>
-
-                  </div>
-                  <button class="button ajax-submit" type="submit" id="otremontirovat_avtomobil_i_polu4it_postoyannuu_skidku">Отремонтировать автомобиль 
-                      и получить постоянную скидку </button>
+                <input type="hidden" name="info" value="Отремонтируйте автомобиль в автосервисе ТверьАвтомеханик и получите скидку в 10% на последующие услуги!">
+                <div class="input-div">
+                  <input type="text" class="input" name="name" placeholder="Введите имя">
+                </div>
+                <div class="input-div">
+                  <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *">
+                  <span class="error-message">Заполните это поле</span>
+                </div>
+                <button class="button ajax-submit" type="submit" id="otremontirovat_avtomobil_i_polu4it_postoyannuu_skidku">Отремонтировать автомобиль и получить постоянную скидку </button>
               </div>
-              <div class="form-info-block">
-                <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
-                данных и соглашаюсь с условиями политики конфиденциальности">
-                <label class="checkbox"><input type="checkbox" name="Ответ1" value="" ><span></span></label>
-
-                <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-                данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
-              </div>
-              
+              <div class="form-bottom">
+                <label class="checkbox"><input type="checkbox" name="politika_confedensialnosti" value="Даю согласие" ><span></span></label>    
+                <div class="form-info">
+                  Нажимая на кнопку, я даю свое согласие на обработку персональных данных и соглашаюсь с условиями 
+                  <a href="#" data-remodal-target="politika-modal">политики конфиденциальности</a>
+                </div>
+              </div>              
           </form>
         </div>
       </div>
@@ -481,36 +477,29 @@
 
       <div class="form wow slideInLeft">
         <form action="/mail.php" method="post">
-            <div class="form-title">Закажите обратный звонок и узнайте стоимость ремонта Вашего автомобиля</div>
-            <div class="form-block">
-              <div class="form-content">
-                  <input type="hidden" name="info" value="Закажите обратный звонок и узнайте стоимость ремонта Вашего автомобиля">
-                  <div class="input-div">
-                      <input type="text" class="input" name="name" placeholder="Введите имя">
-                  </div>
-                  <div class="input-div">
-                      <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *"
-                      required=""> <span class="error-message">Заполните это поле</span>
-    
-                  </div>
-                  <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
+          <div class="form-title">Закажите обратный звонок и узнайте стоимость ремонта Вашего автомобиля</div>
+          <div class="form-block">
+            <div class="form-content">
+              <input type="hidden" name="info" value="Закажите обратный звонок и узнайте стоимость ремонта Вашего автомобиля">
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Введите имя">
               </div>
-              <div class="form-info-block">
-                <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
-                данных и соглашаюсь с условиями политики конфиденциальности">
-                <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
-    
-                <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-                данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required> 
+                <span class="error-message">Заполните это поле</span>  
               </div>
+              <button class="button ajax-submit" type="submit" id="zakazat_obratnyi_zvonok">Заказать обратный звонок</button>
             </div>
-            
-            
+            <div class="form-bottom">
+              <label class="checkbox"><input type="checkbox" name="politika_confedensialnosti" value="Даю согласие" ><span></span></label>       
+              <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных данных и соглашаюсь с условиями 
+                  <a href="#" data-remodal-target="politika-modal">политики конфиденциальности</a></div>
+            </div>
+          </div>            
         </form>
       </div>
     </div>
   </section>
-
 
   <section class="section section-sovet" id="sovet">
     <div class="container">
@@ -631,16 +620,11 @@
       <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
     </form>
 
-    <div class="form-info-block">
-      <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
-      данных и соглашаюсь с условиями политики конфиденциальности">
-      <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
-
+    <div class="form-bottom">
+      <label class="checkbox"><input type="checkbox" name="politika_confedensialnosti" value="Даю согласие" ><span></span></label>
       <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-      данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
-    </div>
-
-    
+      данных и соглашаюсь с условиями <a href="#" data-remodal-target="politika-modal">политики конфиденциальности</a></div>
+    </div>    
   </div>
 
   <div class="remodal remodal-small modal" data-remodal-id="zapisatsya-online" data-remodal-options="hashTracking: true">
@@ -656,18 +640,13 @@
         <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
         <span class="error-message">Заполните это поле</span>
       </div>
-      <button class="button ajax-submit" type="submit" id="zapisatsya_online">Записаться онлайн</button>
-
-      
+      <button class="button ajax-submit" type="submit" id="zapisatsya_online">Записаться онлайн</button>      
     </form>
 
-    <div class="form-info-block">
-      <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
-      данных и соглашаюсь с условиями политики конфиденциальности">
-      <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
-
+    <div class="form-bottom">
+      <label class="checkbox"><input type="checkbox" name="politika_confedensialnosti" value="Даю согласие" ><span></span></label>
       <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-      данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
+      данных и соглашаюсь с условиями <a href="#" data-remodal-target="politika-modal">политики конфиденциальности</a></div>
     </div>
 
     
@@ -689,18 +668,14 @@
         <input type="tel" class="input" name="phone" placeholder="Введите номер телефона *" required>
         <span class="error-message">Заполните это поле</span>
       </div>
-      <button class="button ajax-submit" type="submit" id="zapisatsya_online_i_polu4it_kupon">Записаться онлайн  и получить купон</button>
-
-      
+      <button class="button ajax-submit" type="submit" id="zapisatsya_online_i_polu4it_kupon">Записаться онлайн  и получить купон</button>      
     </form>
 
-    <div class="form-info-block">
-      <input type="hidden" name="Вопрос1" value="Нажимая на кнопку, я даю свое согласие на обработку персональных 
-      данных и соглашаюсь с условиями политики конфиденциальности">
-      <label class="checkbox"><input type="radio" name="Ответ1" value="" ><span></span></label>
+    <div class="form-bottom">
+      <label class="checkbox"><input type="checkbox" name="politika_confedensialnosti" value="Даю согласие" ><span></span></label>
 
       <div class="form-info">Нажимая на кнопку, я даю свое согласие на обработку персональных 
-      данных и соглашаюсь с условиями <span>политики конфиденциальности</span></div>
+      данных и соглашаюсь с условиями <a href="#" data-remodal-target="politika-modal">политики конфиденциальности</a></div>
     </div>
 
     
@@ -750,7 +725,7 @@
     
   </div>
 
-  <div class="remodal more-politika" data-remodal-id="more-modal-3" data-remodal-options="hashTracking: true">
+  <div class="remodal more-politika" data-remodal-id="politika-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>   
     
     <div class="politika">

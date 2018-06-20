@@ -602,9 +602,11 @@ body {
     width: 200px;
   }
 
-  .form-info {
-    letter-spacing: 0;
-    &-block {
+  .form {
+    &-info {
+      letter-spacing: 0;      
+    }
+    &-bottom {
       max-width: 250px;
       margin: 10px auto 0;
     }
