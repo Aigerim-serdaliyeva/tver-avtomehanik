@@ -169,19 +169,19 @@ $(document).ready(function () {
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
     },
-  });
-
-  
+  });  
 
   $(".carousel-service").owlCarousel({
     loop: true,
+    dots: true, 
+    nav: false,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
-      991: { items: 3, mouseDrag: true, dots: false, nav: true },
+      0: { items: 1, mouseDrag: false },
+      480: { items: 2, mouseDrag: true },
+      991: { items: 3 },
     },
   });
 
@@ -210,9 +210,6 @@ $(document).ready(function () {
       767: { items: 2, mouseDrag: false, dots: true, nav: false },
     },
   });
-
-
-
 
 });
 

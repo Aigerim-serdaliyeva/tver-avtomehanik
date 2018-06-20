@@ -18,9 +18,18 @@
     .line {
       display: none;
     }
+
     &-team {
       .line {
         display: none;
+      }
+
+      &-content {
+        justify-content: center;
+      }
+
+      .member {
+        margin: 0 10px 20px;
       }
     }
   }
@@ -38,6 +47,7 @@
     .logo {
       margin-right: 0;
     }
+
     &-title {
       display: none;
     }
@@ -65,7 +75,6 @@
 
 	.main-menu {
     display: none;
-    // background-color: #fff;
     background-color: $black;
     position: fixed;
     top: 84px;
@@ -94,6 +103,7 @@
     
   .form {
     margin: 0 auto;
+
     &--vertical {
       max-width: 500px;
     }
@@ -116,6 +126,7 @@
         &-1 {
           margin-bottom: 30px;
         }
+
         &-2 {
           margin-bottom: 20px;
         }
@@ -132,8 +143,10 @@
       &-content {
         display: none;
       }
+
       .carousel-service {
         display: block;
+        
         .service {
           margin: 0 auto;
         }
@@ -145,6 +158,15 @@
       .review {
         &-block {
           padding: 12px 20px 12px 80px;
+        }
+      }
+    }
+
+    &-sovet {
+      .member {
+        &-image {
+          width: 230px;
+          height: 210px;
         }
       }
     }
@@ -167,32 +189,7 @@
       }
     }
     
-  }
-
-
-  #thanks-page {
-    .section-thanks {
-      padding: 130px 0 30px;
-      
-      &-content {
-        margin-left: 0;
-      }
-
-      &-title {
-        margin-bottom: 20px;
-      }
-
-      &-text {
-        margin-bottom: 20px;
-        font-size: 26px;
-      }
-
-      &-link {
-        font-size: 16px;
-        margin-bottom: 70px;
-      }
-    }
-  }
+  }  
 
 }
 
@@ -231,6 +228,12 @@
     &-title {
       font-size: 24px;
       margin-bottom: 20px;
+      padding-left: 0;
+      text-align: center;
+
+      &::before {
+        display: none;
+      }
     }
 
     &-main {
@@ -239,6 +242,12 @@
         max-width: none;
       }
     } 
+
+    &-team {
+      .member {
+        margin: 0;
+      }
+    }
     
     &-reviews {
       .review {
@@ -285,33 +294,30 @@
         }
       }
     }
+
+    &-sovet {
+      .member {
+        &-image {
+          width: 255px;
+          height: 240px;
+        }
+      }
+    }
       
   }
-}
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 580px) {
-  .section {
-
-    &-title {
-      padding-left: 0;
-      text-align: center;
-      &::before {
-        display: none;
+  #thanks-page {
+    .section-thanks {
+      &-title {
+        font-size: 24px;
       }
-    }
 
-    &-team {
-      &-content {
-        justify-content: center;
-      }
-      .member {
-        margin-bottom: 15px;
+      &-text {
+        font-size: 18px;
       }
     }
   }
 }
-
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
@@ -395,7 +401,7 @@
         }
       }
     }
-  }
+  }  
 
   .modal {
     &-title {
