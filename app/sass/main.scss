@@ -90,13 +90,17 @@ body {
   ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 0;
-    margin: 10px 0;
+    margin: 10px 0 10px 287px;
   }
 
   li {
-    margin-left: 45px;
+    margin-right: 45px;
+
+    &.last {
+      margin-right: 0;
+    }
   }
 
   a {
