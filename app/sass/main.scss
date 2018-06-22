@@ -340,6 +340,7 @@ body {
     .garant {
       max-width: 340px;
       font-weight: 500;
+      letter-spacing: -0.5px;
 
       &-img {
         margin-bottom: 18px;
@@ -356,12 +357,12 @@ body {
 
       &-remont {
         font-weight: 500;
-        font-size: 12px;
+        font-size: 13px;
         margin-bottom: 15px;
       }
 
       &-vremya {
-        font-size: 12px;
+        font-size: 13px;
       }
     }
   }
