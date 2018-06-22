@@ -214,14 +214,18 @@ h1, h2, h3, h4, h5, h6 {
 
       &-title {
         margin-bottom: 22px;
+        letter-spacing: -0.7px;
       }
 
       &-skidka {
         font-size: 12px;
+        font-weight: 500;
         color: #000;
         margin-bottom: 32px;
         position: relative;
+        letter-spacing: -0.5px;
         z-index: 0;
+        left: -12px;
         &::before {
           content: "";
           position: absolute;
@@ -229,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
           width: 199px;
           height: 40px;
           z-index: -1;
-          left: -30px;
+          left: -22px;
           top: -15px;
         }
       }
@@ -276,6 +280,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     color: #fff;
     margin-left: 10px;
+    letter-spacing: normal;
 
     a {
       margin-left: 3px;
