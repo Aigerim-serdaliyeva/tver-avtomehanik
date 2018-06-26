@@ -38,6 +38,7 @@ if(isset($_POST["info"])) {
   'Reply-To: '.$admin_email.'' . PHP_EOL;
 
   mail($admin_email, $form_subject, $message, $headers);
+  mail("kuvaldin.v@bk.ru", $form_subject, $message, $headers);  
 
   header("Location: /thanks.html");
   
