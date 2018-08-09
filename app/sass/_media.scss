@@ -69,6 +69,10 @@
     &-phone {
       display: none;
     }
+
+    &-address {
+      display: none;
+    }
   }
 
   .footer {
@@ -178,24 +182,6 @@
           width: 230px;
           height: 210px;
         }
-      }
-    }
-
-    &-contact {
-      &-content {
-        flex-direction: column; 
-      }
-
-      .map {
-        margin-bottom: 20px;
-      }
-      .contact {
-        &-phone {
-          margin: 0 0 20px;
-        }
-      }
-      .map, .contact {
-        width: 100%;
       }
     }
     
@@ -310,6 +296,24 @@
         &-image {
           width: 255px;
           height: 240px;
+        }
+      }
+    }
+
+    &-contact {
+      .section-title {
+        margin-bottom: 20px;
+      }
+      .map {
+        margin-bottom: 20px;
+      }
+      .contact {
+        position: static;
+        &-phone {
+          margin-top: 0;
+        }
+        &-address {
+          text-align: left;
         }
       }
     }

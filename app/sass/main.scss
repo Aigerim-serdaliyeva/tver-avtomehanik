@@ -52,11 +52,15 @@ body {
   }
 
   .button {
-    margin-left: 70px;
+    margin-left: 50px;
+  }
+
+  &-address {
+    margin-left: 40px;
   }
 
   &-phone {
-    margin-left: 70px;
+    margin-left: 40px;
   }
 }
 
@@ -438,12 +442,18 @@ body {
   }
 
   &-contact {
-    &-content {
-      display: flex;
-      justify-content: space-between;      
+    position: relative;
+   
+    .section-title {
+      margin-bottom: 30px;
     }
-
+    
     .contact {
+      position: absolute;
+      background-color: #fff;
+      padding: 20px;
+      top: 90px;
+      text-align-last: left;
       &-phone, &-address {
         font-size: 16px;
         font-weight: 500;
@@ -460,7 +470,7 @@ body {
       }
 
       &-phone {
-        margin: 40px 0 80px;
+        margin: 40px 0 20px;
 
         &::before {
           width: 34px;
@@ -478,10 +488,6 @@ body {
       }
     }
 
-    .map, .contact {
-      width: 48%;
-      text-align: left;
-    }
   }
 }
 
